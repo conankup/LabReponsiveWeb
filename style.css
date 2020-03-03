@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat',sans-serif;
+    color: #636363;
+    font-size: 18px;
+    font-weight: 400;
+    background-color:#fff;
+}
+
+header > img{
+    display: block;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Wrapper */
+.wrapper{
+    width: 90%;
+    max-width: 1400px;
+    margin: 5px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px 2px #ccc;
+}
+.content{
+    text-align: center;
+    color: #000;
+    
+}
+.content h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+.content span{
+    color: red;
+}
+.form{
+    width: 100%;
+    margin: 25px 0;
+}
+.top-form,
+.middle-form{
+    width: 100%;
+    min-height: 65px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+.form input[type="text"],
+.form textarea{
+    font-size: 1.4rem;
+    color: #999;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 5px;
+    outline: none;
+}
+.form .lable{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.top-form .inner-form{
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+.middle-form {
+    width: 98%;
+    clear: both;
+}
+
+.content .btn-Send{
+    text-align: center;
+    padding: 5px 40px 5px 40px;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #e91126;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.section-content{
+    width: 90%;
+    max-width: 1400px;
+    margin: 5px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.box-video {
+    height: 425px;
+    position: relative;
+    text-align: center;
+}
+.video-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.content-grid{
+    display: grid;
+    width: 88%;
+    grid-gap: 10px;
+    margin: 50px auto;
+    justify-content: space-around;
+    text-align: left;
+}
+.content-grid h1{
+    font-size: 4rem;
+    color: #e91126;
+}
+.content-grid p{
+    margin-top: 20px;
+}
+
+
+/* PC */
+@media (min-width: 769px) {
+     
+    .content-grid{
+        grid-template-columns: repeat(2, auto);
+    }    
+}
+
